@@ -27,12 +27,39 @@ export const Wrapper = styled.div`
     }
   }
 `;
-
 export const Button = styled.button`
   float: right;
   border: none;
-  border-style: none;
+
+  border-radius: 0.1rem;
   background: none;
+
+  cursor: pointer;
+  font-size: 0.85rem;
+  text-align: center;
+  margin-top: 0.1rem;
+  :hover {
+    opacity: 75%;
+  }
+`;
+export const MiniButton = styled.button`
+  float: right;
+  border: none;
+
+  border-radius: 0.1rem;
+  background: black;
+  color: white;
+  cursor: pointer;
+  font-size: 0.7rem;
+  padding-bottom: 0.15rem;
+  padding-top: 0.05rem;
+  padding-inline: 0.25rem;
+  text-align: center;
+  margin-top: 0.1rem;
+  margin-right: 0.2rem;
+  :hover {
+    opacity: 75%;
+  }
 `;
 
 export const CheckoutButton = styled.button`
@@ -45,6 +72,7 @@ export const CheckoutButton = styled.button`
   font: inherit;
 
   cursor: pointer;
+  text-decoration: underline;
 `;
 
 export const ItemInfo = styled.div`

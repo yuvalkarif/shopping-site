@@ -9,7 +9,7 @@ export const Container = styled.div`
   margin-right: 1rem;
   cursor: pointer;
   transition: opacity 150ms ease-out;
-  &::after {
+  ::before {
     opacity: 0;
     content: "${(props) => props.text} ";
 
@@ -25,13 +25,31 @@ export const Container = styled.div`
     overflow: hidden;
     text-overflow: ellipsis;
   }
-  ::after {
-    content: "yo";
+  &::after {
+    content: "ADD TO CART";
+    white-space: nowrap;
+    opacity: 0;
+    top: 89%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    position: absolute;
+    font-weight: bold;
+    align-self: center;
+    font-size: 0.85rem;
+    transition: opacity 150ms ease-in-out;
+    padding: 1rem 1rem;
+
+    padding-bottom: 6rem;
+    align-self: end;
   }
 
   :hover {
     opacity: 80%;
 
+    &::before {
+      opacity: 80%;
+    }
     &::after {
       opacity: 80%;
     }

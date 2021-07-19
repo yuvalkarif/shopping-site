@@ -8,6 +8,7 @@ import {
   Title,
   CheckoutButton,
   Total,
+  MiniButton,
 } from "./Cart.styles";
 
 const Cart = ({ cart, setShowCart, showCart, setCart, total }) => {
@@ -21,7 +22,7 @@ const Cart = ({ cart, setShowCart, showCart, setCart, total }) => {
           return (
             <>
               <li>
-                <Button
+                <MiniButton
                   onClick={() => {
                     const arr = [...cart];
                     const index = cart.indexOf(item);
@@ -32,7 +33,7 @@ const Cart = ({ cart, setShowCart, showCart, setCart, total }) => {
                   }}
                 >
                   x
-                </Button>
+                </MiniButton>
                 <ItemInfo>
                   <div id="brand">{item.brand}</div>
                   <div id="price">{item.price}</div>
@@ -45,7 +46,7 @@ const Cart = ({ cart, setShowCart, showCart, setCart, total }) => {
       </ul>
       <div>
         <Total>Total: {total}</Total>
-        <CheckoutButton>Checkout</CheckoutButton>
+        <CheckoutButton>{">"}Checkout</CheckoutButton>
       </div>
     </Wrapper>
   );
