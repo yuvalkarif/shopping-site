@@ -35,6 +35,11 @@ const Shop = () => {
       )}
       <Header>
         <Logo>getFilm</Logo>
+
+        <a href="/">HOME</a>
+
+        <a href="/">SHOP</a>
+
         <CartLogo
           onClick={() => {
             setShowCart(!showCart);
