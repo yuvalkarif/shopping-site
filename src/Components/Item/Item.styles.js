@@ -9,9 +9,9 @@ export const Container = styled.div`
   margin-right: 1rem;
   cursor: pointer;
   transition: opacity 150ms ease-out;
-  ::after {
+  &::after {
     opacity: 0;
-    content: "${(props) => props.text}";
+    content: "${(props) => props.text} ";
 
     text-align: left;
     position: absolute;
@@ -25,11 +25,14 @@ export const Container = styled.div`
     overflow: hidden;
     text-overflow: ellipsis;
   }
+  ::after {
+    content: "yo";
+  }
 
   :hover {
     opacity: 80%;
 
-    ::after {
+    &::after {
       opacity: 80%;
     }
   }

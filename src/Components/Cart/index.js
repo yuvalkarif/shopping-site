@@ -1,23 +1,52 @@
 import React from "react";
 import { useEffect } from "react/cjs/react.development";
 
-import { Wrapper, Button } from "./Cart.styles";
+import {
+  Wrapper,
+  Button,
+  ItemInfo,
+  Title,
+  CheckoutButton,
+  Total,
+} from "./Cart.styles";
 
-const Cart = ({ cart, setShowCart, showCart }) => {
+const Cart = ({ cart, setShowCart, showCart, setCart, total }) => {
   return (
     <Wrapper>
       <Button onClick={() => setShowCart(false)}>X</Button>
-      <div>Shopping Cart ({cart.length})</div>
+      <Title>Shopping Cart({cart.length})</Title>
 
       <ul>
-        {cart.map((item) => (
-          <>
-            <li>
-              {item.model + " "} {" " + item.price + "₪"}
-            </li>
-          </>
-        ))}
+        {cart.map((item) => {
+          return (
+            <>
+              <li>
+                <Button
+                  onClick={() => {
+                    const arr = [...cart];
+                    const index = cart.indexOf(item);
+                    if (index !== -1) {
+                      arr.splice(index, 1);
+                      setCart(arr);
+                    }
+                  }}
+                >
+                  x
+                </Button>
+                <ItemInfo>
+                  <div id="brand">{item.brand}</div>
+                  <div id="price">{item.price}</div>
+                  <div id="model">{item.model}</div>
+                </ItemInfo>
+              </li>
+            </>
+          );
+        })}
       </ul>
+      <div>
+        <Total>Total: {total}</Total>
+        <CheckoutButton>Checkout</CheckoutButton>
+      </div>
     </Wrapper>
   );
 };

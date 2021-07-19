@@ -1,13 +1,24 @@
 import React from "react";
 import { Container, Info } from "./Item.styles";
 
-const Item = ({ brand, model, price, img, setCart, cart, item }) => {
+const Item = ({
+  brand,
+  model,
+  price,
+  img,
+  setCart,
+  cart,
+  item,
+  total,
+  setTotal,
+}) => {
   return (
     <Container
-      text={item.description.substring(0, 135) + "..."}
+      text={item.description.substring(0, 135) + "... "}
       onClick={() => {
         setCart((oldCart) => [...oldCart, item]);
-        console.log(cart);
+
+        console.log(total, cart);
       }}
     >
       <img src={img} width="200" alt="minister-d"></img>

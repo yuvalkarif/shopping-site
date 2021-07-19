@@ -8,15 +8,30 @@ import Cart from "../Cart";
 import { items } from "../Item/Items";
 //Styled
 import { CartLogo, Content, Header, Logo } from "./Shop.styles";
+import { useEffect } from "react/cjs/react.development";
 
 const Shop = () => {
   const [cart, setCart] = useState([]);
   const [showCart, setShowCart] = useState(false);
+  const [total, setTotal] = useState(0);
+  useEffect(() => {
+    let count = 0;
+    cart.forEach((item) => {
+      count += parseInt(item.price);
+    });
+    setTotal(count);
+  }, [cart]);
 
   return (
     <>
       {showCart && (
-        <Cart cart={cart} setShowCart={setShowCart} showCart={showCart}></Cart>
+        <Cart
+          cart={cart}
+          setShowCart={setShowCart}
+          showCart={showCart}
+          setCart={setCart}
+          total={total}
+        ></Cart>
       )}
       <Header>
         <Logo>getFilm</Logo>
@@ -40,6 +55,8 @@ const Shop = () => {
             img={item.img}
             setCart={setCart}
             cart={cart}
+            total={total}
+            setTotal={setTotal}
           />
         ))}
       </Content>
