@@ -1,24 +1,23 @@
 import React from "react";
-import { Wrapper, CartLogo, Logo } from "./Header.styles";
+import { Wrapper, CartLogo, Logo, Text } from "./Header.styles";
+import { Link } from "react-router-dom";
 
 const Header = ({ setShowCart, showCart, cart }) => (
-  <div>
-    <Wrapper>
-      <Logo>getFilm</Logo>
+  <Wrapper>
+    <Logo>getFilm</Logo>
 
-      <a href="/">HOME</a>
+    <Link to="/">HOME</Link>
 
-      <a href="/">SHOP</a>
+    <Link to="/shop">SHOP</Link>
 
-      <CartLogo
-        onClick={() => {
-          setShowCart(!showCart);
-        }}
-      >
-        CART_{cart.length}
-      </CartLogo>
-    </Wrapper>
-  </div>
+    <CartLogo
+      onClick={() => {
+        setShowCart(!showCart);
+      }}
+    >
+      CART_{cart.length}
+    </CartLogo>
+  </Wrapper>
 );
 
 export default Header;

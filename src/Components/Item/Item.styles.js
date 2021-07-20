@@ -26,7 +26,7 @@ export const Container = styled.div`
     text-overflow: ellipsis;
   }
   &::after {
-    content: "ADD TO CART";
+    content: "GO TO PAGE";
     white-space: nowrap;
     opacity: 0;
     top: 89%;

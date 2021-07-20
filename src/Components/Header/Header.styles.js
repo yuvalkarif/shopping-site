@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
+export const Text = styled.div``;
 export const Wrapper = styled.div`
   justify-content: space-between;
 
@@ -13,14 +14,16 @@ export const Wrapper = styled.div`
 
   display: grid;
   grid-auto-rows: 1fr;
-  grid-template-columns: 50% 1fr 1fr 20%;
+  grid-template-columns: 50% 1fr 1fr 1fr;
   grid-template-rows: 1fr;
   gap: 0px 0px;
   grid-template-areas: ". . . .";
   border-bottom: 1px solid;
   margin-bottom: 1rem;
   a {
-    text-align: center;
+    text-align: right;
+    text-decoration: none;
+    color: black;
   }
 `;
 
