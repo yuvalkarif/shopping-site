@@ -13,7 +13,7 @@ export const Wrapper = styled.div`
   padding: 0.6rem;
   z-index: 2;
   animation: appear 150ms ease-in-out;
-  border: solid 1px rgba(0, 0, 0, 0.5);
+  border: solid 1px rgba(0, 0, 0, 1);
   border-radius: 3px;
 
   background-color: rgba(255, 255, 255, 0.96);

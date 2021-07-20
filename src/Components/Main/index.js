@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 //Components
 import Cart from "../Cart";
 import Shop from "../Shop";
+import Footer from "../Footer";
 //Data
 import { items } from "../Item/Items";
 //Styled
@@ -14,6 +15,7 @@ import Header from "../Header";
 import Home from "../Home";
 import ItemPage from "../Item/ItemPage";
 import Item from "../Item/Index";
+import { Wrapper } from "./Main.styles.js";
 
 const Main = () => {
   const [cart, setCart] = useState([]);
@@ -28,7 +30,7 @@ const Main = () => {
   }, [cart]);
 
   return (
-    <>
+    <Wrapper>
       {showCart && (
         <Cart
           cart={cart}
@@ -70,7 +72,8 @@ const Main = () => {
           <Home></Home>
         </Route>
       </Switch>
-    </>
+      <Footer></Footer>
+    </Wrapper>
   );
 };
 

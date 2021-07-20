@@ -8,7 +8,6 @@ const Shop = ({ items, setCart, cart, setTotal, total }) => {
     <Content>
       {items.map((item) => (
         <Link to={`/shop/${item.id}`}>
-          {item.id}
           <Item
             item={item}
             key={item.id}

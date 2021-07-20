@@ -67,6 +67,11 @@ export const AddToCart = styled.button`
   padding: 0.75rem 1rem;
   margin-right: 1rem;
   cursor: pointer;
+  transition: all 100ms ease-in-out;
+  :hover {
+    background-color: black;
+    color: white;
+  }
 `;
 
 export const Bottom = styled.div`

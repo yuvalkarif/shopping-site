@@ -11,4 +11,9 @@ export const Content = styled.div`
   grid-gap: 1rem;
   justify-items: center;
   align-items: center;
+
+  a {
+    color: black;
+    text-decoration: none;
+  }
 `;
