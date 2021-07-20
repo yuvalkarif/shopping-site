@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/get-cameras/static/css/main.d781bde2.chunk.css",
-    "main.js": "/get-cameras/static/js/main.52de31d2.chunk.js",
-    "main.js.map": "/get-cameras/static/js/main.52de31d2.chunk.js.map",
-    "runtime-main.js": "/get-cameras/static/js/runtime-main.be0bf430.js",
-    "runtime-main.js.map": "/get-cameras/static/js/runtime-main.be0bf430.js.map",
-    "static/js/2.6703b7da.chunk.js": "/get-cameras/static/js/2.6703b7da.chunk.js",
-    "static/js/2.6703b7da.chunk.js.map": "/get-cameras/static/js/2.6703b7da.chunk.js.map",
-    "index.html": "/get-cameras/index.html",
-    "static/css/main.d781bde2.chunk.css.map": "/get-cameras/static/css/main.d781bde2.chunk.css.map",
-    "static/js/2.6703b7da.chunk.js.LICENSE.txt": "/get-cameras/static/js/2.6703b7da.chunk.js.LICENSE.txt",
-    "static/media/First-film-camera6.8c115f25.jpeg": "/get-cameras/static/media/First-film-camera6.8c115f25.jpeg",
-    "static/media/canonAE1.b97e1922.png": "/get-cameras/static/media/canonAE1.b97e1922.png",
-    "static/media/minister-d.f0aa4fcd.png": "/get-cameras/static/media/minister-d.f0aa4fcd.png",
-    "static/media/minoltaX700.c451f17c.png": "/get-cameras/static/media/minoltaX700.c451f17c.png",
-    "static/media/olympus.765c9af5.png": "/get-cameras/static/media/olympus.765c9af5.png",
-    "static/media/pentaxK1000.cd72f8e1.png": "/get-cameras/static/media/pentaxK1000.cd72f8e1.png",
-    "static/media/ricoh.204cb450.png": "/get-cameras/static/media/ricoh.204cb450.png"
+    "main.css": "/shopping-site/static/css/main.d781bde2.chunk.css",
+    "main.js": "/shopping-site/static/js/main.3c679155.chunk.js",
+    "main.js.map": "/shopping-site/static/js/main.3c679155.chunk.js.map",
+    "runtime-main.js": "/shopping-site/static/js/runtime-main.ec578283.js",
+    "runtime-main.js.map": "/shopping-site/static/js/runtime-main.ec578283.js.map",
+    "static/js/2.4e8e3742.chunk.js": "/shopping-site/static/js/2.4e8e3742.chunk.js",
+    "static/js/2.4e8e3742.chunk.js.map": "/shopping-site/static/js/2.4e8e3742.chunk.js.map",
+    "index.html": "/shopping-site/index.html",
+    "static/css/main.d781bde2.chunk.css.map": "/shopping-site/static/css/main.d781bde2.chunk.css.map",
+    "static/js/2.4e8e3742.chunk.js.LICENSE.txt": "/shopping-site/static/js/2.4e8e3742.chunk.js.LICENSE.txt",
+    "static/media/First-film-camera6.8c115f25.jpeg": "/shopping-site/static/media/First-film-camera6.8c115f25.jpeg",
+    "static/media/canonAE1.b97e1922.png": "/shopping-site/static/media/canonAE1.b97e1922.png",
+    "static/media/minister-d.f0aa4fcd.png": "/shopping-site/static/media/minister-d.f0aa4fcd.png",
+    "static/media/minoltaX700.c451f17c.png": "/shopping-site/static/media/minoltaX700.c451f17c.png",
+    "static/media/olympus.765c9af5.png": "/shopping-site/static/media/olympus.765c9af5.png",
+    "static/media/pentaxK1000.cd72f8e1.png": "/shopping-site/static/media/pentaxK1000.cd72f8e1.png",
+    "static/media/ricoh.204cb450.png": "/shopping-site/static/media/ricoh.204cb450.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.be0bf430.js",
-    "static/js/2.6703b7da.chunk.js",
+    "static/js/runtime-main.ec578283.js",
+    "static/js/2.4e8e3742.chunk.js",
     "static/css/main.d781bde2.chunk.css",
-    "static/js/main.52de31d2.chunk.js"
+    "static/js/main.3c679155.chunk.js"
   ]
 }
