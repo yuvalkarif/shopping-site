@@ -2,7 +2,7 @@
 import React from "react";
 import { useState } from "react";
 //Router
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { Switch, Route } from "react-router-dom";
 //Components
 import Cart from "../Cart";
 import Shop from "../Shop";
@@ -10,11 +10,11 @@ import Footer from "../Footer";
 //Data
 import { items } from "../Item/Items";
 //Styled
-import { useEffect } from "react/cjs/react.development";
+import { useEffect } from "react";
 import Header from "../Header";
 import Home from "../Home";
 import ItemPage from "../Item/ItemPage";
-import Item from "../Item/Index";
+
 import { Wrapper } from "./Main.styles.js";
 
 const Main = () => {
@@ -47,7 +47,7 @@ const Main = () => {
         cart={cart}
       ></Header>
       <Switch>
-        <Route exact path="/shop">
+        <Route exact path="/shopping-site/shop">
           <Shop
             items={items}
             setCart={setCart}
@@ -57,7 +57,7 @@ const Main = () => {
           ></Shop>
         </Route>
         <Route
-          path="/shop/:id"
+          path="/shopping-site/shop/:id"
           render={(routeProps) => (
             <ItemPage
               {...routeProps}
@@ -68,7 +68,7 @@ const Main = () => {
             ></ItemPage>
           )}
         ></Route>
-        <Route path="/">
+        <Route path="/shopping-site/">
           <Home></Home>
         </Route>
       </Switch>

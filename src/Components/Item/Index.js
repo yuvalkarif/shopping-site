@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Info } from "./Item.styles";
 
-const Item = ({ brand, model, price, img, setCart, item }) => {
+const Item = ({ brand, model, price, img, item }) => {
   return (
     <Container
       text={item.description.substring(0, 135) + "... "}
